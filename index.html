@@ -7,75 +7,7 @@
     <meta name="keywords" itemprop="keywords" content="shadowsocks配置，shadowsocks下载"/>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        h3{
-            color:#5bc0de;
-        }
-        p,.indent-box{
-            text-indent: 2em;
-        }
-
-        .p-text{
-            text-indent: 0;
-            margin: 0;
-            font-size: 16px;
-            line-height: 20px;
-        }
-        .title-sub{
-            color:#c9302c;
-            margin-bottom: 10px;
-        }
-        .little-img{
-            width: 18px;
-            height: 18px;
-        }
-        .middle-img{
-            width: 40px;
-            height: 40px;
-        }
-        .params-img{
-            width: 200px;
-            height: 300px;
-        }
-        .inner-box{
-            text-indent: 4em;
-        }
-        .inner-box p{
-            text-indent: 0;
-            padding-left: 4em;
-        }
-        .indent-box{
-            position: relative;
-        }
-        .indent-box p{
-            /*position: absolute;*/
-        }
-        .wingy-img{
-            width: 278px;
-            height: 100px;
-        }
-        .win-module{
-            width: 310px;
-            height: 100px;
-        }
-        .choose-server{
-            width: 300px;
-            height: 120px;
-        }
-        /*.params-p{*/
-            /*position: relative;*/
-        /*}*/
-        /*.params{*/
-            /*display: block;*/
-            /*position: absolute;*/
-            /*top:0;*/
-            /*left:50px;*/
-            /*width: 50px;*/
-            /*height: 100px;*/
-            /*background: url(img/params.jpeg) no-repeat no-repeat;*/
-            /*background-size: 50% 50%;*/
-        /*}*/
-    </style>
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 <div class="container">
@@ -85,15 +17,15 @@
             <div>
                 <p class="p-text">兼容客户端:</p>
                 <ul>
-                    <li><a href="">window教程</a></li>
-                    <li><a href="">mac教程</a></li>
-                    <li><a href="">苹果端教程</a></li>
-                    <li><a href="">安卓端教程</a></li>
+                    <li><a href="#win_toturial">window教程</a></li>
+                    <li><a href="#mac_toturial">mac教程</a></li>
+                    <li><a href="#apple_toturial">苹果端教程</a></li>
+                    <!--<li><a href="#">安卓端教程</a>(还未写)</li>-->
                 </ul>
             </div>
             <hr>
             <div>
-                <h6 class="p-text title-sub"><strong>window教程</strong></h6>
+                <h6 class="p-text title-sub" id="win_toturial"><strong>window教程</strong></h6>
                 <p>1. 下载win端shadowsocks软件。<a href="http://movie.immrh.cn/ss/ssr-win.7z" target="_blank">点此下载</a></p>
                 <p>2. 解压（例如：D:/shadowsocks），打开 <mark>ShadowsocksR-dotnet4.0.exe</mark></p>
                 <p>3. 电脑左下角出现小飞机，鼠标右键可看见配置。</p>
@@ -119,7 +51,7 @@
                 <p>8. 选择pac模式。</p>
             </div>
             <div>
-                <h6 class="p-text title-sub"><strong>mac教程</strong></h6>
+                <h6 class="p-text title-sub" id="mac_toturial"><strong>mac教程</strong></h6>
                 <p>1. 下载mac端shadowsocks软件。<a href="http://movie.immrh.cn/ss/ssr-mac.dmg" target="_blank">点此下载ssr-mac.dmg</a>
                 下载太慢？<a href="https://pan.baidu.com/s/1gfKTGH1" target="_blank">点此百度云</a> 下载密码：w8sh
                 </p>
@@ -140,7 +72,7 @@
                 <p>7. 选择服务器，打开小飞机。即可翻墙自由翱翔了。</p>
             </div>
             <div>
-                <h6 class="p-text title-sub">苹果端教程</h6>
+                <h6 class="p-text title-sub" id="apple_toturial">苹果端教程</h6>
                 <p>1. 需要一个美国区appleID，翻墙在国内都被封掉，所以中国区iTunes Store没有提供下载。如果没有，可使用公用账号：
                     <mark>svmgxxd@outlook.com</mark> 密码：<mark>Qq741852</mark>  安全起见，尽量下载完成就注销更换成自己的。
                <strong>需要注意：</strong>只需注销iTunes Store，不是iCloud，苹果10版本之后，iCloud和iTunes Store整合在一起，很容易被一起注销。</p>
@@ -156,5 +88,9 @@
         </div>
     </div>
 </div>
+
+<footer>
+    <p class="text-center sm-text"><small>xm.mrh🍓 提供服务器支持和教程</small></p>
+</footer>
 </body>
 </html>

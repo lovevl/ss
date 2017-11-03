@@ -1,0 +1,60 @@
+h3{
+    color:#5bc0de;
+}
+p,.indent-box{
+    text-indent: 2em;
+}
+
+.p-text{
+    text-indent: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+.title-sub{
+    color:#c9302c;
+    margin-bottom: 10px;
+}
+.little-img{
+    width: 18px;
+    height: 18px;
+}
+.middle-img{
+    width: 40px;
+    height: 40px;
+}
+.params-img{
+    width: 200px;
+    height: 300px;
+}
+.inner-box{
+    text-indent: 4em;
+}
+.inner-box p{
+    text-indent: 0;
+    padding-left: 4em;
+}
+.indent-box{
+    position: relative;
+}
+.indent-box p{
+    /*position: absolute;*/
+}
+.wingy-img{
+    width: 278px;
+    height: 100px;
+}
+.win-module{
+    width: 310px;
+    height: 90px;
+}
+.choose-server{
+    width: 300px;
+    height: 120px;
+}
+footer{
+    margin: 20px;
+}
+footer p{
+    color: #666;
+}
