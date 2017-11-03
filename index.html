@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>shadowsocks翻墙配置</title>
+    <meta name="keywords" itemprop="keywords" content="shadowsocks配置，shadowsocks下载"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        h3{
+            color:#5bc0de;
+        }
+        p,.indent-box{
+            text-indent: 2em;
+        }
+
+        .p-text{
+            text-indent: 0;
+            margin: 0;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .title-sub{
+            color:#c9302c;
+            margin-bottom: 10px;
+        }
+        .little-img{
+            width: 18px;
+            height: 18px;
+        }
+        .middle-img{
+            width: 40px;
+            height: 40px;
+        }
+        .params-img{
+            width: 200px;
+            height: 300px;
+        }
+        .inner-box{
+            text-indent: 4em;
+        }
+        .inner-box p{
+            text-indent: 0;
+            padding-left: 4em;
+        }
+        .indent-box{
+            position: relative;
+        }
+        .indent-box p{
+            /*position: absolute;*/
+        }
+        .wingy-img{
+            width: 278px;
+            height: 100px;
+        }
+        .win-module{
+            width: 310px;
+            height: 100px;
+        }
+        .choose-server{
+            width: 300px;
+            height: 120px;
+        }
+        /*.params-p{*/
+            /*position: relative;*/
+        /*}*/
+        /*.params{*/
+            /*display: block;*/
+            /*position: absolute;*/
+            /*top:0;*/
+            /*left:50px;*/
+            /*width: 50px;*/
+            /*height: 100px;*/
+            /*background: url(img/params.jpeg) no-repeat no-repeat;*/
+            /*background-size: 50% 50%;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h3>翻墙教程，shadowsocks配置。</h3>
+            <div>
+                <p class="p-text">兼容客户端:</p>
+                <ul>
+                    <li><a href="">window教程</a></li>
+                    <li><a href="">mac教程</a></li>
+                    <li><a href="">苹果端教程</a></li>
+                    <li><a href="">安卓端教程</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <h6 class="p-text title-sub"><strong>window教程</strong></h6>
+                <p>1. 下载win端shadowsocks软件。<a href="http://movie.immrh.cn/ss/ssr-win.7z" target="_blank">点此下载</a></p>
+                <p>2. 解压（例如：D:/shadowsocks），打开 <mark>ShadowsocksR-dotnet4.0.exe</mark></p>
+                <p>3. 电脑左下角出现小飞机，鼠标右键可看见配置。</p>
+                <p>4. 配置描述： </p>
+                <div class="inner-box">
+                    <p>1）系统代理模式</p>
+                    <div class="inner-p"><img class="win-module" src="img/winmodule.jpeg" alt="">
+                        <p> <strong>不经过代理直连:</strong>关掉vpn连接。</p>
+                        <p> <strong>PAC模式：</strong>访问国内站点不通过vpn的模式，一般选择此项。</p>
+                        <p> <strong>全局模式：</strong>所有连接都通过vpn。</p>
+                    </div>
+                    <p>2）PAC</p>
+                        <p>此项内容较多，但是是重点知识。以上的PAC模式就是根据此项的pac文件决定。不过一般只要 <strong>更新PAC为GFWList</strong> 可以更新成功即可。</p>
+                        <p>如果更新不成功，提示错误。<a href="http://movie.immrh.cn/ss/pac.txt">点此</a>下载pac文件，将此文件放至与该文件同级的文件夹。（例如：D:/shadowsocks）。即可。</p>
+                    <p>其他就不需要了解了</p>
+                </div>
+                <p>5. 服务器-->编辑服务器-->加号（添加新服务器）</p>
+                <p>6. 加密方式：<mark>aes-256-cfb</mark> 服务器IP和服务器端口和密码：发邮件至 <a href="Mailto:xmmrhmm@gmail.com" title="发邮件？">xmmrhmm@gmail.com</a> 获取。其他不变，保存。</p>
+                <p>7. 如果你添加了多个服务器，连接之前请确认你选择的服务器。</p>
+                <div class="indent-box">
+                    <img class="choose-server" src="img/chooseserver.jpeg" alt="">
+                </div>
+                <p>8. 选择pac模式。</p>
+            </div>
+            <div>
+                <h6 class="p-text title-sub"><strong>mac教程</strong></h6>
+                <p>1. 下载mac端shadowsocks软件。<a href="http://movie.immrh.cn/ss/ssr-mac.dmg" target="_blank">点此下载ssr-mac.dmg</a>
+                下载太慢？<a href="https://pan.baidu.com/s/1gfKTGH1" target="_blank">点此百度云</a> 下载密码：w8sh
+                </p>
+                <p>2. 安装并打开 <mark>ssr-mac.dmg</mark>。</p>
+                <p>3. 右上角显示个小飞机 <img class="little-img" src="img/off-littlefeiji.jpeg" alt="小飞机啊，飞啊飞">点击可开关。</p>
+                <!--<p class="params-p">4. <span class="params"></span></p>-->
+                <p>4. 配置描述:</p>
+                <div class="indent-box"><img class="params-img" src="img/params.jpeg" alt="">
+                    <p><strong>自动代理模式：</strong>表示连接国内不通过vpn，可加快访问速度</p>
+                    <p><strong>全局模式：</strong>所有连接都通过vpn</p>
+                    <p><strong>服务器：</strong>vpn的服务器配置，一会儿下面配置</p>
+                    <p><strong>编辑自动模式的PAC、从GFWList更新PAC、编辑GFWList的用户规则、</strong>这三项表示上面<strong>自动代理模式</strong>所访问的国外站点的PAC文件。软件一般
+                    自带PAC文件，里面包含了很多国外站点，如果你选择了自动代理模式且所访问的站点不能访问，可以点击<strong>编辑自动模式的PAC</strong>，如果在文件中未搜到你所需访问的站点，可按原规则
+                    添加一条新的站点。<strong>从GFWList更新PAC</strong>可以自动从网络上获取新的PAC文件</p>
+                </div>
+                <p>5. 服务器-->打开服务器设定--> <img class="little-img" src="img/plusone.jpeg" alt=""> </p>
+                <p>6. 加密方式为：<mark>aes-256-cfb</mark>  地址和密码：发邮件至 <a href="Mailto:xmmrhmm@gmail.com" title="发邮件？">xmmrhmm@gmail.com</a> 获取。</p>
+                <p>7. 选择服务器，打开小飞机。即可翻墙自由翱翔了。</p>
+            </div>
+            <div>
+                <h6 class="p-text title-sub">苹果端教程</h6>
+                <p>1. 需要一个美国区appleID，翻墙在国内都被封掉，所以中国区iTunes Store没有提供下载。如果没有，可使用公用账号：
+                    <mark>svmgxxd@outlook.com</mark> 密码：<mark>Qq741852</mark>  安全起见，尽量下载完成就注销更换成自己的。
+               <strong>需要注意：</strong>只需注销iTunes Store，不是iCloud，苹果10版本之后，iCloud和iTunes Store整合在一起，很容易被一起注销。</p>
+                <p>2. 账户切换完成后，搜索wingy，下载如下图的app</p>
+                <div class="indent-box"><img class="wingy-img" src="img/wingy.jpeg" alt="wingy"></div>
+                <p>3. 打开app，点右上角 <img class="little-img" src="img/plus-wingy.jpeg" alt=""></p>
+                <p>4. 选择 <mark>Shadowsocks(R)</mark></p>
+                <p>5. 加密方式为：<mark>aes-256-cfb</mark> 服务器，端口和密码：发邮件至 <a href="Mailto:xmmrhmm@gmail.com" title="发邮件？">xmmrhmm@gmail.com</a> 获取。其他不变，保存。</p>
+                <p>6. 返回app首页。点 <img class="middle-img" src="img/startup.jpeg" alt="start"> 第一次连接会提示你添加描述文件，请按指纹确认或输入密码。</p>
+                <p>7. 连接成功。</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
