@@ -52,6 +52,9 @@ p,.indent-box{
     width: 300px;
     height: 120px;
 }
+.bytheway span{
+    color: #f0ad4e;;
+}
 footer{
     margin: 20px;
 }
