@@ -1,3 +1,7 @@
+body{
+    background: url(../img/background.png) repeat;
+}
+
 h3{
     color:#5bc0de;
 }
