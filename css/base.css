@@ -1,5 +1,8 @@
 body{
     background: url(../img/background.png) repeat;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #34495e;
 }
 
 h3{
