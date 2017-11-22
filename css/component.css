@@ -1,0 +1,13 @@
+/* Header */
+
+.PosIndex{
+	position: relative;
+	z-index: 900;
+}
+
+.large-header {
+	position: fixed;
+	z-index: 800;
+	width: 100%;
+	overflow: hidden;
+}
