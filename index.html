@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/component.css">
 </head>
 <body>
+<div id="large-header" class="large-header">
+    <canvas id="demo-canvas"></canvas>
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 PosIndex">
             <h3>翻墙教程，shadowsocks配置。</h3>
             <div>
                 <p class="p-text">兼容客户端:</p>
@@ -48,7 +52,7 @@
                             将此文件放至与该文件同级的文件夹。（例如：D:/shadowsocks）。即可。</p>  -->
                     <p>其他选项可不了解</p>
                 </div>
-                <p>5. 服务器-->编辑服务器-->加号（添加新服务器）</p>
+                <p>5. 服务器&ndash;&gt;编辑服务器-->加号（添加新服务器）</p>
                 <p>6. 加密方式：<mark>aes-256-cfb</mark> 服务器IP和服务器端口和密码：发邮件至 <a href="Mailto:xmmrhmm@gmail.com" title="发邮件？">xmmrhmm@gmail.com</a> 免费获取。其他不变，保存。</p>
                 <p>7. 如果你添加了多个服务器，连接之前请确认你选择的服务器。</p>
                 <div class="indent-box">
@@ -74,7 +78,7 @@
                     自带PAC文件，里面包含了很多国外站点，如果你选择了自动代理模式且所访问的站点不能访问，可以点击<strong>编辑自动模式的PAC</strong>，如果在文件中未搜到你所需访问的站点，可按原规则
                     添加一条新的站点。<strong>从GFWList更新PAC</strong>可以自动从网络上获取新的PAC文件</p>
                 </div>
-                <p>5. 服务器-->打开服务器设定--> <img class="little-img" src="img/plusone.jpeg" alt=""> </p>
+                <p>5. 服务器&ndash;&gt;打开服务器设定--> <img class="little-img" src="img/plusone.jpeg" alt=""> </p>
                 <p>6. 加密方式为：<mark>aes-256-cfb</mark>  地址和密码：发邮件至 <a href="Mailto:xmmrhmm@gmail.com" title="发邮件？">xmmrhmm@gmail.com</a> 免费获取。</p>
                 <p>7. 选择服务器，打开小飞机。即可翻墙自由翱翔了。</p>
             </div>
@@ -97,8 +101,11 @@
         </div>
     </div>
 </div>
-<footer>
+
+<footer class="PosIndex">
     <p class="text-center sm-text"><small>xm.mrh🍓 提供服务器支持和教程，有任何问题发邮件<a href="Mailto:xmmrhmm@gmail.com" title="发邮件？">xmmrhmm@gmail.com</a>咨询</small></p>
 </footer>
+<script src="js/rAF.js"></script>
+<script src="js/demo-2.js"></script>
 </body>
 </html>
