@@ -2,6 +2,12 @@
 
     var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
 
+    var color = ['rgba(251,118,118,','rgba(245,98,147,','rgba(170,114,210,','rgba(82,160,234,',
+        'rgba(62,193,206,','rgba(255,97,63,','rgba(255,63,217,','rgba(255,79,142,',
+        'rgba(67,146,255,','rgba(181,55,255,'];
+    var numM = Math.random();
+    var idx = parseInt(numM.toString().charAt(3));
+
     // Main
     initHeader();
     addListeners();
@@ -84,7 +90,7 @@
             _this.alpha -= 0.0005;
             ctx.beginPath();
             ctx.arc(_this.pos.x, _this.pos.y, _this.scale*10, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(251,118,118,'+ _this.alpha+')';
+            ctx.fillStyle = color[idx]+ _this.alpha+')';
             ctx.fill();
         };
     }
