@@ -68,3 +68,14 @@ footer{
 footer p{
     color: #666;
 }
+.py-box{
+    margin-top: 30px;
+    border: 1px solid #8dcfef;
+    padding: 20px;
+    box-shadow: 10px 10px 15px #98b2bf;
+    border-radius: 15px;
+}
+.python{
+    font-size: 20px;
+    color: #c9302c;
+}
